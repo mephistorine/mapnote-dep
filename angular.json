@@ -11,6 +11,10 @@
       "schematics": {
         "@schematics/angular:application": {
           "strict": true
+        },
+        "@schematics/angular:component": {
+          "changeDetection": "OnPush",
+          "displayBlock": true
         }
       },
       "root": "",
@@ -30,6 +34,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/leaflet/dist/leaflet.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -38,7 +43,7 @@
             "production": {
               "budgets": [
                 {
-                  "type": "initial",
+                  "type": "all",
                   "maximumWarning": "500kb",
                   "maximumError": "1mb"
                 },

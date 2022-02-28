@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core"
+import { FormControl } from "@angular/forms"
 
 @Component({
   selector: "app-shell",
@@ -7,11 +8,15 @@ import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core"
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ShellComponent implements OnInit {
+  public searchFormControl: FormControl = new FormControl()
 
   constructor() {
   }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
   }
 
+  public onClickClearButton(): void {
+    this.searchFormControl.reset()
+  }
 }

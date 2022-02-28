@@ -1,5 +1,6 @@
 import { CommonModule } from "@angular/common"
 import { NgModule } from "@angular/core"
+import { ReactiveFormsModule } from "@angular/forms"
 import { ShellComponent } from "./components/shell/shell.component"
 
 @NgModule({
@@ -10,7 +11,8 @@ import { ShellComponent } from "./components/shell/shell.component"
     ShellComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ]
 })
 export class ShellModule {

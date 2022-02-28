@@ -36,4 +36,17 @@ button {
   border-radius: 14px;
 }
 
-/** endregion BUTTON */
+/** endregion */
+
+/* region INPUT */
+
+.input {
+  border: none;
+  border-radius: 14px;
+  padding: 1rem;
+  width: 100%;
+  font: inherit;
+  background-color: hsl(0deg 0% 100%);
+}
+
+/* endregion */

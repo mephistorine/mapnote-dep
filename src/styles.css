@@ -30,10 +30,23 @@ button {
 }
 
 .button.is-primary {
-  background-color: #43A7E5;
+  background-color: hsl(203, 76%, 58%);
   color: white;
-  padding: 0.5rem 1rem;
   border-radius: 14px;
+}
+
+.button.is-secondary {
+  background-color: hsl(0, 0%, 95%);
+  color: black;
+  border-radius: 14px;
+}
+
+.button.is-small {
+  padding: 0.5rem 1rem;
+}
+
+.button.is-medium {
+  padding: 1rem;
 }
 
 /** endregion */

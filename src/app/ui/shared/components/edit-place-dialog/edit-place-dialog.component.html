@@ -1,0 +1,45 @@
+<section class="form-container" [formGroup]="form">
+  <div class="field">
+    <label class="field-label" for="name">Название</label>
+    <input formControlName="name" class="field-input input" id="name" type="text">
+  </div>
+
+  <div class="field">
+    <label class="field-label" for="rating">Рейтинг</label>
+    <input formControlName="rating" class="field-input input" id="rating" type="number" min="1" max="5" step="1">
+  </div>
+
+  <div class="field">
+    <label class="field-label" for="description">Описание</label>
+    <div class="md-editor">
+      <div class="tabs-container">
+        <ul class="tabs">
+          <li class="tab-item">
+            <button class="button tab-button">Контент</button>
+          </li>
+
+          <li class="tab-item">
+            <button class="button tab-button">Результат</button>
+          </li>
+        </ul>
+      </div>
+
+      <textarea formControlName="description" class="field-input input" id="description"></textarea>
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="field-label" for="tags">Метки</label>
+    <input formControlName="tags" class="field-input input" id="tags" type="text">
+  </div>
+
+  <div class="field">
+    <label class="field-label" for="photos">Фотографии</label>
+    <input formControlName="photos" class="field-input input" id="photos" type="file" multiple>
+  </div>
+</section>
+
+<section class="actions-container">
+  <button class="button is-primary is-medium" (click)="onClickSaveButton()">Сохранить</button>
+  <button class="button is-secondary is-medium" (click)="onClickCancelButton()">Отменить</button>
+</section>
